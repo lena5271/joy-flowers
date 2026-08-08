@@ -8,10 +8,14 @@
 </head>
 
 <body>
+
 <main>
 
+  <!-- HERO -->
   <section class="hero">
+
     <div class="flower">✿</div>
+
     <p>JOY FLOWERS</p>
 
     <h1>
@@ -24,11 +28,14 @@
     </p>
 
     <a href="#share">Share your moment ↓</a>
+
   </section>
 
 
+  <!-- SHARE -->
   <section id="share" class="card">
 
+    <p>YOUR MOMENT</p>
 
     <h2>What did you find?</h2>
 
@@ -40,8 +47,7 @@
     <textarea
       id="message"
       maxlength="500"
-      placeholder="Today, I'm grateful for…">
-    </textarea>
+      placeholder="Today, I'm grateful for…"></textarea>
 
     <button onclick="leaveJoy()">
       Leave a little joy
@@ -51,21 +57,27 @@
 
   </section>
 
-<section class="counter">
-  <div>
-    <strong id="flowers-found">0</strong>
-    <span>Flowers found</span>
-  </div>
 
-  <div>
-    <strong id="joys-shared">0</strong>
-    <span>Joys shared</span>
-  </div>
-</section>
-  
-<section class="wall">
+  <!-- COUNTERS -->
+  <section class="counter">
 
-    <p></p>
+    <div>
+      <strong id="flowers-found">0</strong>
+      <span>Flowers found</span>
+    </div>
+
+    <div>
+      <strong id="joys-shared">0</strong>
+      <span>Joys shared</span>
+    </div>
+
+  </section>
+
+
+  <!-- JOY GARDEN -->
+  <section class="wall">
+
+    <p>THE JOY GARDEN</p>
 
     <h2>The Joy Garden</h2>
 
@@ -76,6 +88,7 @@
   </section>
 
 </main>
+
 
 <!-- Supabase -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>

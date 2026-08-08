@@ -1,1 +1,78 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Joy Flowers</title><link rel="stylesheet" href="styles.css"></head><body><main><section class="hero"><div class="flower">✿</div><p>JOY FLOWERS</p><h1>This flower is yours.<br><em>You were meant to find it.</em></h1><p class="intro">Take a moment. Notice where you are. Then share something you're carrying with you—a thought, a hope, a tiny joy.</p><a href="#share">Share your moment ↓</a></section><section id="share" class="card"><p>YOUR MOMENT</p><h2>What did you find?</h2><p>Share anonymously. Your words may become a little gift for the next person.</p><textarea id="message" maxlength="500" placeholder="Today, I'm grateful for…"></textarea><button onclick="leaveJoy()">Leave a little joy</button><div id="status"></div></section><section class="wall"><p>THE JOY WALL</p><h2>Little things people found.</h2><div class="messages"><div>There is always something worth noticing.<small>Someone who found a flower</small></div><div>I hope something unexpectedly good finds you today.<small>Someone who found a flower</small></div></div></section></main><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joy Flowers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<main>
+
+  <section class="hero">
+    <div class="flower">✿</div>
+    <p>JOY FLOWERS</p>
+
+    <h1>
+      This flower is yours.<br>
+      <em>You were meant to find it.</em>
+    </h1>
+
+    <p class="intro">
+      Take a moment. Notice where you are. Then share something you're
+      carrying with you—a thought, a hope, a tiny joy.
+    </p>
+
+    <a href="#share">Share your moment ↓</a>
+  </section>
+
+
+  <section id="share" class="card">
+
+    <p>YOUR MOMENT</p>
+
+    <h2>What did you find?</h2>
+
+    <p>
+      Share anonymously. Your words may become a little gift
+      for the next person.
+    </p>
+
+    <textarea
+      id="message"
+      maxlength="500"
+      placeholder="Today, I'm grateful for…">
+    </textarea>
+
+    <button onclick="leaveJoy()">
+      Leave a little joy
+    </button>
+
+    <div id="status"></div>
+
+  </section>
+
+
+  <section class="wall">
+
+    <p>THE JOY WALL</p>
+
+    <h2>Little things people found.</h2>
+
+    <div id="messages" class="messages">
+      <p>Loading little joys…</p>
+    </div>
+
+  </section>
+
+</main>
+
+<!-- Supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- Joy Flowers -->
+<script src="app.js"></script>
+
+</body>
+</html>

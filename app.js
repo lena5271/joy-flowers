@@ -8,8 +8,15 @@ const db = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 // -------------------------
 // Record a flower being found
 // -------------------------
+async function recordFlowerScan() {
+  const { error } = await db
+    .from("flower_scans")
+    .insert({});
 
-async function recordFlowerFound() {
+  if (error) {
+    console.error("Flower scan error:", error);
+  }
+}
   const params = new URLSearchParams(window.location.search);
   const flowerId = params.get("flower");
 
@@ -173,6 +180,6 @@ function escapeHtml(text) {
 // Start everything
 // -------------------------
 
-recordFlowerFound();
+recordFlowerScan();
 loadCounters();
 loadMessages();

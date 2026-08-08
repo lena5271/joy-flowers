@@ -1,0 +1,1 @@
+function leaveJoy(){const t=document.getElementById('message'),s=document.getElementById('status'),v=t.value.trim();if(!v){s.textContent='Write a little something first.';return}s.textContent='Thank you for leaving a little joy. We’ll connect the public Joy Wall next.';t.value='';}

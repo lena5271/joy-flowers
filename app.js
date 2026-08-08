@@ -62,11 +62,10 @@ async function leaveJoy() {
     });
 
   if (error) {
-    console.error(error);
-    status.textContent =
-      "Something went wrong. Please try again.";
-    return;
-  }
+  console.error("SUPABASE ERROR:", error);
+  status.textContent = "Error: " + error.message;
+  return;
+}
 
   textBox.value = "";
   status.textContent =

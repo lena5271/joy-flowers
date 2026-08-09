@@ -1,5 +1,7 @@
+
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,6 +37,10 @@
   <!-- SHARE -->
   <section id="share" class="card">
 
+    <p>YOUR MOMENT</p>
+
+    <h2>What did you find?</h2>
+
     <p>
       Share anonymously. Your words may become a little gift
       for the next person.
@@ -43,6 +49,8 @@
     <textarea
       id="message"
       maxlength="500"
+      placeholder="Today, I'm grateful for…"
+    ></textarea>
 
     <button onclick="leaveJoy()">
       Leave a little joy
@@ -58,7 +66,7 @@
 
     <div>
       <strong id="flowers-found">0</strong>
-      <span>Flowers found</span>
+      <span>Flower moments</span>
     </div>
 
     <div>
@@ -72,7 +80,7 @@
   <!-- JOY GARDEN -->
   <section class="wall">
 
-  
+    <p>THE JOY GARDEN</p>
 
     <h2>The Joy Garden</h2>
 
@@ -85,10 +93,7 @@
 </main>
 
 
-<!-- Supabase -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-<!-- Joy Flowers -->
 <script src="app.js"></script>
 
 </body>
